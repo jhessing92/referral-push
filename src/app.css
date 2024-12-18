@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-[#0A0A0A] text-white m-0 font-sans;
+}
+
+.sidebar-item {
+  @apply flex items-center space-x-3 px-4 py-3 text-gray-400 hover:text-white hover:bg-[#1A1A1A] rounded-lg transition-colors;
+}
+
+.sidebar-item.active {
+  @apply bg-[#1A1A1A] text-white;
+}
+
+.stat-card {
+  @apply bg-[#1A1A1A] rounded-xl p-6;
+}
+
+.btn-primary {
+  @apply bg-[#FF4405] hover:bg-[#FF5C26] text-white px-4 py-2 rounded-lg transition-colors;
+}
+
+.input-field {
+  @apply bg-[#1A1A1A] border border-gray-800 rounded-lg px-4 py-2 text-white focus:outline-none focus:border-[#FF4405];
+}
